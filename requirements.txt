@@ -1,0 +1,11 @@
+langchain_openai
+pandas
+numpy
+langchain_google_genai
+langchain_core
+matplotlib
+sklearn
+nltk
+word2vec
+gensim
+beautifulsoup4

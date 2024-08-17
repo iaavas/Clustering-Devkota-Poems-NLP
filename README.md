@@ -1,4 +1,4 @@
-# Clustering Laxmi Prasad Devkota's Poems
+# Analysis of Laxmi Prasad Devkota's Poems through NLP
 
 ## Introduction
 
@@ -31,13 +31,6 @@ The process of clustering the poems can be visualized in the following workflow:
 ![Flowchart](./images/flowchart.png)
 _Figure 1: Process Workflow_
 
-### Dimensionality Reduction and Visualization
-
-To visualize the high-dimensional data, PCA (Principal Component Analysis) is used for dimensionality reduction, making it easier to interpret the clustering results.
-
-![PCA Analysis](./images/pca.png)
-_Figure 2: PCA Visualization_
-
 ## How to Run This Project
 
 ### Prerequisites
@@ -59,3 +52,36 @@ First, clone the repository:
 git clone https://github.com/yourusername/devkota-poem-clustering.git
 cd devkota-poem-clustering
 ```
+
+Install the requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+For scrapping poems
+
+```bash
+python web-scrap.py
+```
+
+For translating poems
+
+```bash
+python translate_poems.py
+```
+
+Use Jupyer Notebook for preprocessing and feature extraction
+
+## Output
+
+### Dimensionality Reduction and Visualization
+
+To visualize the high-dimensional data, PCA (Principal Component Analysis) is used for dimensionality reduction, making it easier to interpret the clustering results.
+
+![PCA Analysis](./images/pca.png)
+_Figure 2: PCA Visualization_
+
+## Contributing
+
+We welcome contributions to this project! Whether you have ideas for improving clustering algorithms, enhancing preprocessing steps, or introducing new visualization techniques, feel free to submit a pull request. If you encounter any issues or have suggestions, please raise them in the Issues section.
