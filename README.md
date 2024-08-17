@@ -1,87 +1,105 @@
-# Analysis of Laxmi Prasad Devkota's Poems through NLP
+# NLP-Based Analysis of Laxmi Prasad Devkota's Poetry
 
-## Introduction
+## Overview
+
+This project applies Natural Language Processing (NLP) techniques to analyze and categorize the poems of Laxmi Prasad Devkota, a renowned Nepali poet. We aim to cluster 35 of Devkota's translated poems into four thematic categories using advanced machine learning algorithms.
 
 ![Laxmi Prasad Devkota](./images/devkota.jpeg)
 
-Laxmi Prasad Devkota (1909-1959), known as Nepal's "Maha Kavi" (Great Poet), stands as a towering figure in Nepali literature. A pioneer of neo-romantic poetry, his work blends lyrical elegance with deep philosophical undertones. Through masterpieces like "Muna Madan," Devkota captures the essence of human experience, particularly the trials, tribulations, and emotions of everyday people. His legacy continues to shape and inspire contemporary Nepali literature.
+## About Laxmi Prasad Devkota
+
+Laxmi Prasad Devkota (1909-1959), revered as Nepal's "Maha Kavi" (Great Poet), was a pioneering figure in Nepali literature. His neo-romantic poetry, exemplified by works like "Muna Madan," seamlessly blends lyrical beauty with profound philosophical insights, capturing the essence of human experience and the spirit of everyday people.
 
 ## Project Objectives
 
-This project seeks to categorize 36 of Devkota’s translated poems into four thematic clusters:
+Our goal is to categorize Devkota's poems into four thematic clusters:
 
-- **Nature**
-- **Society**
-- **Culture**
-- **Spirituality**
+1. Nature & Beauty
+2. Society
+3. Culture
+4. Spirituality
 
-The poems have been sourced from WikiSource and translated into English for this study.
+We've sourced 36 poems from WikiSource and translated them into English for this analysis.
 
-## Workflow and Approach
+## Methodology
 
-### Project Workflow
+### Workflow
 
-The process of clustering the poems can be visualized in the following workflow:
+Our analysis follows this structured approach:
 
-1. **Data Collection:** Aggregating Devkota’s poems from credible sources.
-2. **Data Preprocessing:** Cleaning the text by removing stop words, numbers, and symbols; translating them to English; and applying tokenization and lemmatization.
-3. **Feature Extraction:** Leveraging NLP techniques such as Word2Vec for embedding the poems into high-dimensional vectors.
-4. **Clustering:** Implementing unsupervised learning models to cluster poems based on thematic similarity.
+1. **Data Collection**: Aggregating poems from WikiSource
+2. **Preprocessing**: Cleaning, translating, and preparing text data
+3. **Feature Extraction**: Employing Word2Vec for text embedding
+4. **Clustering**: Implementing K-means algorithm for thematic grouping
 
-![Flowchart](./images/flowchart.png)
-_Figure 1: Process Workflow_
+![Process Workflow](./images/flowchart.png)
 
-## How to Run This Project
+## Getting Started
 
 ### Prerequisites
 
-1. Python 3.x
-2. Required libraries:
-   - `numpy`
-   - `pandas`
-   - `matplotlib`
-   - `nltk`
-   - `gensim`
-   - `scikit-learn`
+- Python 3.7+
+- pip
 
 ### Installation
 
-First, clone the repository:
+1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/devkota-poem-clustering.git
-cd devkota-poem-clustering
-```
+   ```bash
+   git clone https://github.com/yourusername/devkota-poem-clustering.git
+   cd devkota-poem-clustering
+   ```
 
-Install the requirements
+2. Install Dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+    pip install -r requirements.txt
+   ```
 
-For scrapping poems
+### Usage
 
-```bash
-python web-scrap.py
-```
+1. Get your Gemini API Key (if you want to use from scratch)
 
-For translating poems
+2. Scrape poems:
 
-```bash
-python translate_poems.py
-```
+   ```bash
+    python web-scrap.py
+   ```
 
-Use Jupyer Notebook for preprocessing and feature extraction
+3. Translate poems:
 
-## Output
+   ```bash
+   python translate_poems.py
+   ```
 
-### Dimensionality Reduction and Visualization
+4. For preprocessing and feature extraction, use the provided Jupyter Notebook.
 
-To visualize the high-dimensional data, PCA (Principal Component Analysis) is used for dimensionality reduction, making it easier to interpret the clustering results.
+## Results
 
-![PCA Analysis](./images/pca.png)
-_Figure 2: PCA Visualization_
+## Dimensionality Reduction Visualization
+
+We use Principal Component Analysis (PCA) to visualize our high-dimensional data:
+
+![PCA](./output/pca.png)
+
+## Poem Categorization
+
+Our clustering results:
+
+![Poem Categorization](./output/category.png)
 
 ## Contributing
 
-We welcome contributions to this project! Whether you have ideas for improving clustering algorithms, enhancing preprocessing steps, or introducing new visualization techniques, feel free to submit a pull request. If you encounter any issues or have suggestions, please raise them in the Issues section.
+We welcome contributions to enhance this project! Whether you have ideas for improving clustering algorithms, refining preprocessing steps, or introducing new visualization techniques, please feel free to submit a pull request.
+
+## Issues
+
+If you encounter any problems or have suggestions, please open an issue in the GitHub repository.
+License
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- Laxmi Prasad Devkota Foundation for preserving the poet's works
+- WikiSource contributors for digitizing Devkota's poems
+- The open-source NLP community for their invaluable tools and resources
