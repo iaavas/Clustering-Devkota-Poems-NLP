@@ -96,7 +96,7 @@ We welcome contributions to enhance this project! Whether you have ideas for imp
 
 If you encounter any problems or have suggestions, please open an issue in the GitHub repository.
 License
-This project is licensed under the MIT License.
+This project is licensed under the Apache License.
 
 ## Acknowledgments
 
